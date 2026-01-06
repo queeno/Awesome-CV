@@ -1,0 +1,126 @@
+\newcommand*{\cvjobw}[5]{%
+  \vspace{-2.0mm}\setlength\tabcolsep{0pt}\setlength{\extrarowheight}{0pt}%
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 8cm} R{8cm}}
+    \entrytitlestyle{#2} & \entrylocationstyle{#3} \\
+    \entrypositionstyle{#1} & \entrydatestyle{#4} \\
+  \end{tabular*}%
+  \vspace{2.5mm}\descriptionstyle{#5}}
+
+\newcommand{\cvjob}[5]{\vspace{3mm}\cventry{#1}{#2}{#3}{#4}{}\vspace{2.5mm}\descriptionstyle{#5}}
+
+\cvsection{Professional Experience}
+
+\begin{cventries}
+
+  \cvjobw
+  {Engineering Manager, Data \& Platform Engineering}
+  {Haleon (GSK Consumer Healthcare)}
+  {London, UK}
+  {Apr 2025 -- Sep 2025, Mar 2026 -- Present (rehired)}
+  {
+    \begin{cvitems}
+      \item {\textbf{Team Building \& People Leadership:} Built and led a new team from zero to 6
+                engineers, hiring them and line-managing the team (employees and contractors) through 1:1 coaching, performance
+                feedback, and career development.}
+      \item {\textbf{AI-Assisted Delivery:} Led the team's adoption of AI-assisted development (GitHub Copilot, Claude Code, custom
+                team skills, AI code review backed by automated tests), delivering a production AKS platform in about six weeks
+                against a typical 6--12 months.}
+      \item {\textbf{Greenfield Delivery:} Led delivery of a greenfield data platform for Identity \& Access Management (IAM) governance,
+                replacing manual audit processes with automated SOX compliance reporting (PA-02/AM-02 controls); managed the
+                project budget and iterative releases aligned to audit timelines.}
+      \item {\textbf{Migrated:} Moved a team working on a SAP ERP platform from Azure DevOps to GitHub, covering source control
+                and CI/CD.}
+      \item {\textbf{Technology:} Dagster/Python Medallion ETL pipeline on Azure (AKS, ADLS Gen2, PostgreSQL), with Terraform Cloud, Helm, and GitHub Actions.}
+    \end{cvitems}
+  }
+
+  \cvjob
+  {Principal Platform Consultant}
+  {Barclays}
+  {London, UK}
+  {Oct 2025 -- Mar 2026}
+  {
+    \begin{cvitems}
+      \item {\textbf{Team Enablement \& Coaching:} Led the transformation of a legacy software unit into cloud-native platform
+                engineers through hands-on pair programming, mentoring the internal Tech Lead on platform strategy, team structure,
+                and engineering best practices.}
+      \item {\textbf{Platform Strategy:} Drove the greenfield Internal Developer Platform (IDP) strategy for the Payments division
+                on AWS/EKS (Go, Terraform, Crossplane, Flux, Helm, GitHub Actions), cutting team onboarding from weeks to minutes.}
+      \item {\textbf{Technical Authority:} Acted as Technical Authority within the platform team, defining architecture patterns on
+                AWS/Kubernetes and establishing ``Golden Path'' standards and automated compliance frameworks that moved legacy
+                systems onto a secure, self-service platform.}
+      \item {\textbf{Reliability:} Architected the platform on AWS/EKS for payment rails with low-latency, high-availability requirements.}
+    \end{cvitems}
+  }
+
+  \vspace{3mm}
+  \cventry
+  {Engineering Manager, Cloud Enablement}
+  {JPMorgan Chase}
+  {London, UK}
+  {Apr 2023 -- Mar 2025}
+  {
+    \begin{cvitems}
+      \item {\textbf{Team Leadership \& Growth:} Grew the platform team to 13 engineers, hiring around 10 including senior and lead
+                roles, and line-managing the team (employees and contractors) through 1:1 coaching, performance feedback, and
+                career development.}
+      \item {\textbf{Organisational Design:} Recognised the team had outgrown its structure, built the business case to the
+                Engineering Director to split it, and selected the new managers; the proposal was approved and the new structure
+                permanently adopted.}
+      \item {\textbf{Platform Outcomes:} Led the firm-wide GCP landing zones initiative (self-service, isolated environments per team), now running globally, and as the most senior
+                lead in the Platform team set technical direction for the firm-wide GCP and Kubernetes ecosystem (100+ clusters),
+                delivered within ISO 27001/SOC 2-aligned frameworks; mentored peer tech leads across the function and advised senior and C-suite stakeholders on technical direction and spend.}
+      \item {\textbf{Golden Path \& Technology:} Drove a ``Golden Path'' platform strategy with Crossplane and GitOps-driven change management (ArgoCD), with
+                observability via Prometheus/Grafana, improving reliability and developer experience across teams.}
+      \item {\textbf{FinOps:} Embedded FinOps as a core platform capability, giving teams cost visibility and advising senior stakeholders on cloud spend.}
+      \item {\textbf{Reliability Practices:} Set SLOs and on-call and incident practices for the platform team; ran postmortems.}
+      \item {\textbf{AI Enablement:} Delivered AI-ready platform blueprints (Vertex AI integration, data pipelines) on the firm-wide GCP and Kubernetes foundation, enabling teams' transition to data-intensive GenAI workloads.}
+    \end{cvitems}
+  }
+
+  \cventry
+  {Infrastructure DevOps Lead}
+  {Deloitte}
+  {Copenhagen, Denmark}
+  {Mar 2021 -- Mar 2023}
+  {
+    \begin{cvitems}
+      \item {\textbf{Cross-Team Coordination:} Led the AWS cloud infrastructure stream for Denmark's Property Tax Platform, coordinating
+                across 3 satellite teams in Denmark and the US to resolve cross-functional architectural blockers.}
+      \item {\textbf{Cost Optimisation:} Consolidated infrastructure, simplifying legacy complexity and reducing monthly cloud
+                operational costs without compromising system performance.}
+      \item {\textbf{Modernisation \& Security:} Replaced brittle custom authentication with managed AWS API Gateway, establishing
+                a standardised, secure pattern for external integrations.}
+    \end{cvitems}
+  }
+
+  \cventry
+  {Principal Consultant}
+  {Microsoft (for Refinitiv)}
+  {London, UK}
+  {Nov 2020 -- Mar 2021}
+  {
+    \begin{cvitems}
+      \item {\textbf{Migration Delivery:} Served in Microsoft's Professional Services, consulting within the team migrating one of Refinitiv's trading applications from on-prem to Azure, optimising AKS/EventHubs for high-frequency throughput.}
+      \item {\textbf{Architecture:} Took part in architecture meetings to define project scope, develop a proof of concept, and tackle key technical challenges.}
+      \item {\textbf{Environment Delivery:} Led the delivery of the first full development environment, acting as liaison between internal teams and Microsoft.}
+    \end{cvitems}
+  }
+
+  \cventry
+  {Selected earlier roles}
+  {}
+  {}
+  {}
+  {
+    \begin{cvitems}
+      \item {Mar 2020 -- Oct 2020, \textbf{Loveholidays, Lead Platform Engineer:} Resolved latency bottlenecks in Go/Java microservices on GKE, achieving 30\% performance gains through Kubernetes autoscaling optimisation.}
+      \item {Jun 2019 -- Mar 2020, \textbf{eBay, Lead DevOps Engineer:} Orchestrated the migration of eBay Classifieds to GCP, architecting standardised GKE workflows for distributed European engineering teams.}
+      \item {Mar 2017 -- Feb 2018, \textbf{Element Insurance, Senior DevOps Engineer:} Built and managed AWS infrastructure (EC2, S3, Lambda, CloudWatch, DynamoDB) with Terraform.}
+      \item {Feb 2016 -- Feb 2017, \textbf{HMRC, Senior DevOps Consultant:} UK Government digital tax at scale.}
+      \item {Aug 2015 -- Feb 2016, \textbf{KPMG, DevOps Engineer:} Designed and built multi-tenant AWS infrastructure to deploy the Hortonworks Data Platform for KPMG clients, including data security and infrastructure hardening.}
+      \item {2010 -- 2011, \textbf{Google, Corporate Operations Engineer (intern):} Python/App Engine internal tooling (20\% project); Python Readability award (internal code quality).}
+    \end{cvitems}
+  }
+
+\end{cventries}
