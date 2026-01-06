@@ -1,0 +1,15 @@
+*.synctex.gz
+*.aux
+*.log
+*.out
+
+# Tailored CV variants (per-application; never committed)
+variants/
+# Variant PDF outputs (Simon-Aquino-CV_<Company>.pdf), but keep the canonical cuts
+Simon-Aquino-CV_*.pdf
+!Simon-Aquino-CV_EM_UK.pdf
+!Simon-Aquino-CV_EM_EU.pdf
+!Simon-Aquino-CV_IC_UK.pdf
+!Simon-Aquino-CV_IC_EU.pdf
+# Variant cover letter outputs (Simon-Aquino-CoverLetter_<Company>.pdf), but keep the canonical one
+Simon-Aquino-CoverLetter_*.pdf
